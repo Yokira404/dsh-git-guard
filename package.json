@@ -1,0 +1,56 @@
+{
+  "name": "@yokira404/dsh-git-guard",
+  "version": "1.0.1",
+  "license": "MIT",
+  "description": "Two switches at the right of the Session header. The left one stops writes to your local git repository (git add, git commit); the right one stops uploads to a remote (git push, git remote, gh). Both start on, and switching a guard on never releases the other. The block happens before a command runs.",
+  "type": "module",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yokira404/dsh-git-guard.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "git",
+    "guard",
+    "push"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "docs",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "meta": {
+    "title": "Git Repository Guard",
+    "description": "Two switches at the right of the Session header. The left one stops writes to your local git repository (git add, git commit); the right one stops uploads to a remote (git push, git remote, gh). Both start on, and switching a guard on never releases the other. The block happens before a command runs."
+  }
+}

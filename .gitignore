@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+package-lock.json
+pnpm-lock.yaml
+
+# Build and pack output
+dist/
+build/
+out/
+*.tgz
+*.tar.gz
+
+# Evidence captured while testing — screenshots, traces, temporary copies of the
+# installed Host bundles. The suites themselves (evidence/*.mjs) stay tracked,
+# because they are how the plugin is verified.
+evidence/shots/
+evidence/tmp/
+evidence/node_modules/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs and local scratch
+*.log
+npm-debug.log*
+.env
+.env.*
+*.local

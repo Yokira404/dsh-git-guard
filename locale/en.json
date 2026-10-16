@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Git Repository Guard",
+    "description": "Two switches at the right of the Session header. The left one stops writes to your local git repository (git add, git commit); the right one stops uploads to a remote (git push, git remote, gh). Both start on, and switching a guard on never releases the other. The block happens before a command runs."
+  }
+}

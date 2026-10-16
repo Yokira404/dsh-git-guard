@@ -1,0 +1,11 @@
+# Bundle layer for @yokira404/dsh-git-guard.
+#
+# Listing this package in the profile's dsh.profile.bundles makes DSH read this
+# patch and insert the row below, which loads the Host half — the half that owns
+# the `tools/pre-execute` rule and the two HTTP routes the switches write to. The
+# Host half also makes `dsh.client` visible to the client-modules scan, which
+# serves ./client.js to the browser, where the pair is drawn.
+- insert:
+    - id: git-guard
+      name: '@yokira404/dsh-git-guard'
+      config: {}
