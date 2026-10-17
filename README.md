@@ -1,5 +1,7 @@
 # Git Repository Guard · dsh-git-guard
 
+[中文说明 →](README.zh.md)
+
 Two switches at the right of the Session header that stop an agent from writing your
 local git repository or uploading it to a remote.
 
