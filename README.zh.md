@@ -1,5 +1,7 @@
 # Git 仓库保护 · dsh-git-guard
 
+[English →](README.md)
+
 会话标题栏右侧的一对开关，拦住 agent 写入本地 git 仓库或把它上传到远端。
 
 | 开关 | 位置 | 拦住什么 |
